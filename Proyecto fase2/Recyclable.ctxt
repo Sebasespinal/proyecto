@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Recyclable
+comment0.text=\r\n\ A\ class\ that\ is\ both\ a\ bin\ and\ inroganic,\ adds\ the\ characteristics\ for\r\n\ a\ Recylable\ bin.\r\n\ \r\n\ @author\ Ricardo\ Chuy\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Recyclable()
+comment1.text=\r\n\ Constructor\ of\ the\ class\ recyclable\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Checking\ for\ collisions\ constantly\ in\ game\r\n
+numComments=3

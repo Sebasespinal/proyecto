@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Organic
+comment0.text=\r\n\ Class\ for\ bins\ that\ will\ contain\ organic\ wastes\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Organic()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Detecting\ collisions\ constantly\ in\ game\r\n
+numComments=3

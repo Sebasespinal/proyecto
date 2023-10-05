@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Aluminio
+comment0.text=\r\n\ Un\ tipo\ de\ desecho\ que\ puede\ ser\ clasificlable\r\n\ \r\n\ @author\ Ricardo\ Chuy\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Aluminio()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Aluminio\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=3

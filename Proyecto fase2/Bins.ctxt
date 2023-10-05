@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Bins
+comment0.text=\r\n\ Parent\ Class\ of\ types\ of\ bins\r\n\ \r\n\ @author\ Ricardo\ Chuy\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Bins\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ DetectWaste()
+comment2.text=\r\n\ Method\ for\ all\ type\ of\ bins\ that\ detects\ contact\ with\ a\ given\ Waste\r\n\ On\ contact\ the\ waste\ is\ deleted\ and\ with\ the\ logic\ controller,\ it\ is\ verified\r\n\ if\ the\ clasification\ is\ correct\r\n
+comment3.params=
+comment3.target=int\ getType()
+comment4.params=type
+comment4.target=void\ setType(int)
+comment5.params=
+comment5.target=java.lang.String\ getLabel()
+comment6.params=label
+comment6.target=void\ setLabel(java.lang.String)
+comment7.params=
+comment7.target=java.util.ArrayList\ getWastInBin()
+comment8.params=Objects
+comment8.target=void\ setWasteInBin(java.util.ArrayList)
+numComments=9
