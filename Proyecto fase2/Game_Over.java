@@ -58,6 +58,13 @@ public class Game_Over extends World
     {
         Dog dog = new Dog();
         addObject(dog,506,314);
+        dog.setLocation(770,525);
+        dog.setLocation(677,453);
+        dog.setLocation(693,471);
+        dog.setLocation(632,407);
+        dog.setLocation(694,431);
+        dog.setLocation(682,423);
+        dog.setLocation(686,379);
     }
     
     public Connection getConnection() throws SQLException 
