@@ -26,7 +26,7 @@ public class Game_Over extends World
     public Game_Over(int score)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(900, 600, 1); 
         FinalScore = score;
         Name = JOptionPane.showInputDialog("Enter your Name");
 
@@ -60,7 +60,7 @@ public class Game_Over extends World
         addObject(dog,506,314);
     }
     
-	public Connection getConnection() throws SQLException 
+    public Connection getConnection() throws SQLException 
     {
         String url = "jdbc:mysql://localhost:3306/reciclaje";
         String username = "root";
@@ -79,22 +79,22 @@ public class Game_Over extends World
     }
     public void addScore() {
 
-	try {
-	    		conn = getConnection();
-            	        String sql = "INSERT INTO `table_leaderboard`(`id`, `name`, `score`)" + " VALUES ( null, ?,?)";
-                	                
+    try {
+                conn = getConnection();
+                        String sql = "INSERT INTO `table_leaderboard`(`id`, `name`, `score`)" + " VALUES ( null, ?,?)";
+                                    
                             PreparedStatement Stmt = conn.prepareStatement(sql);
-                	                
+                                    
                             Stmt.setString (1, Name);
                             Stmt.setInt (2, FinalScore);
                             
                             Stmt.execute();
 
-	                
-	} catch (SQLException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+                    
+    } catch (SQLException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
     
 
 
@@ -108,21 +108,21 @@ public class Game_Over extends World
         Top5.clear();
 
         try {
-	 		conn = getConnection();
-	 		rs = stmt.executeQuery("SELECT id, name, score FROM table_leaderboard ORDER BY score DESC LIMIT 5");
+             conn = getConnection();
+             rs = stmt.executeQuery("SELECT id, name, score FROM table_leaderboard ORDER BY score DESC LIMIT 5");
 
-	 		while (rs.next()) {	
-                    	        int SQ_id = rs.getInt("id");
-                    	        String SQ_name = rs.getString("name");
-                    	        String SQ_score = rs.getString("score"); 
-                    	        Top5.add(SQ_id + " " +SQ_name + " " + SQ_score + " ");
-		        }
+             while (rs.next()) {    
+                                int SQ_id = rs.getInt("id");
+                                String SQ_name = rs.getString("name");
+                                String SQ_score = rs.getString("score"); 
+                                Top5.add(SQ_id + " " +SQ_name + " " + SQ_score + " ");
+                }
                         conn.close();
-		}
+        }
         catch (SQLException e) {
- 		// TODO Auto-generated catch block
- 		e.printStackTrace();
- 	}
+         // TODO Auto-generated catch block
+         e.printStackTrace();
+     }
     }
 }
 

@@ -16,7 +16,7 @@ public class Start extends World
     public Start()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(640, 480, 1); 
+        super(900, 600, 1); 
         prepare();
     }
     
@@ -29,5 +29,12 @@ public class Start extends World
         Dog dog = new Dog();
         addObject(dog, 250, 117);
         dog.setLocation(488,325);
+        dog.setLocation(620,385);
+        getBackground();
+        dog.setLocation(576,371);
+        dog.setLocation(626,400);
+        dog.setLocation(700,194);
+        dog.setLocation(629,371);
+        dog.setLocation(647,348);
     }
 }
