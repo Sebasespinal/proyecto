@@ -16,7 +16,7 @@ public class Inorganic extends Bins
      */
     public Inorganic(){
         setType(1);
-        setLabel("Inorganico");
+        setLabel("");
     }
     
     /**

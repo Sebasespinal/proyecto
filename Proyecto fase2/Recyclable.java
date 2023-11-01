@@ -15,7 +15,7 @@ public class Recyclable extends Inorganic
     public Recyclable(){
         super();
         setRecyclable(true);
-        setLabel(getLabel() + "\nReciclable");
+        setLabel(getLabel() + "Inorganico");
         
         GreenfootImage image = getImage();
         image.scale(image.getWidth() - 925, image.getHeight() - 1175);
