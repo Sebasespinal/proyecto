@@ -54,7 +54,7 @@ public class Juego extends World
     public void ShowTimer(){
         timer--;
         if (timer % 60 == 0){
-            showText("Tiempo: "+ timer / 60, 50, 50);
+            //showText("Tiempo: "+ timer / 60, 50, 50);
         }
     }
     
@@ -62,7 +62,7 @@ public class Juego extends World
      * Method to show score
      */
     public void ShowScore(){
-        showText("Puntos: "+ score, 540, 50);
+        showText("Puntaje: "+ score, 750, 125);
     }
     
     /**

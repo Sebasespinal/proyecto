@@ -40,8 +40,8 @@ public class Game_Over extends World
             Name = JOptionPane.showInputDialog("Enter your Name");
         }
 
-        showText(""+ FinalScore, 290, 155);
-        showText(""+ Name, 290, 190);
+        showText("Jugador/a: "+ Name, 290, 250);
+        showText("Putaje: "+ FinalScore, 290, 300);
         
         if (Top5 != null){
             showText(Top5.get(0), 200, 200);
