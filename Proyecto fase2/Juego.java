@@ -18,7 +18,7 @@ public class Juego extends World
      */
     public Juego()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 900x600 cells with a cell size of 1x1 pixels.
         super(900, 600, 1); 
         prepare();
         setScore(0);
@@ -91,13 +91,13 @@ public class Juego extends World
         NonRecyclable nonRecyclable = new NonRecyclable();
         addObject(nonRecyclable,318,292);
 
-        organic.setLocation(550,340);
+        organic.setLocation(630,400);
         showText(""+ organic.getLabel(), organic.getX(), organic.getY());
         
-        recyclable.setLocation(440,340);
+        recyclable.setLocation(440,400);
         showText(""+ recyclable.getLabel(), recyclable.getX(), recyclable.getY());
         
-        nonRecyclable.setLocation(310,340);
+        nonRecyclable.setLocation(250,400);
         showText(""+ nonRecyclable.getLabel(), nonRecyclable.getX(), recyclable.getY());
         }
 }
