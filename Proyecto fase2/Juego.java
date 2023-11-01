@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import javax.swing.JOptionPane;
 /**
  * Game Screen, were the clasification of different Waste Objects are made
  * 
@@ -10,7 +10,9 @@ public class Juego extends World
 {
     private int timer = 7250;
     private int score;
+    public static String name = null;
     private ClasifControll Controller = new ClasifControll();
+    private boolean nameRequested = false;
     
     /**
      * Constructor for objects of class Juego.
@@ -20,6 +22,10 @@ public class Juego extends World
     {    
         // Create a new world with 900x600 cells with a cell size of 1x1 pixels.
         super(900, 600, 1); 
+        if (!nameRequested && name == null) {
+            name = JOptionPane.showInputDialog("Ingrese su nombre");
+            nameRequested = true;
+        }
         prepare();
         setScore(0);
     }
@@ -38,6 +44,7 @@ public class Juego extends World
      */
     public void act()
     {
+        prepare();
         ShowTimer();
         ShowScore();
         SpawnNewWaste();

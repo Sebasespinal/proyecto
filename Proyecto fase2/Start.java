@@ -1,5 +1,4 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
 /**
  * Here we show the strart page
  * 
@@ -8,7 +7,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Start extends World
 {
-
     /**
      * Constructor for objects of class Start.
      * 
@@ -18,7 +16,7 @@ public class Start extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 600, 1); 
         prepare();
-    }
+            }
     
     /**
      * Prepare the world for the start of the program.
