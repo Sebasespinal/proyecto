@@ -48,7 +48,7 @@ public class Juego extends World
         ShowTimer();
         ShowScore();
         SpawnNewWaste();
-        if (timer >= 0) {
+        if (timer <= 0) {
             Greenfoot.playSound("WIN.mp3");
             Greenfoot.setWorld(new Game_Over(score));
         }

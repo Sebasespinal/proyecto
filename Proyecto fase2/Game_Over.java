@@ -32,17 +32,15 @@ public class Game_Over extends World
 
     public void act()
     {
-
         String name = Juego.name;
         if (name != null) {
             showText("Jugador/a: " + name, 295, 250);
         }
         showText("Puntaje: " + FinalScore, 290, 300);
+        
         if (Top5 != null){
             showText(Top5.get(0), 200, 200);
         }
-        
-
     }
     
     /**
