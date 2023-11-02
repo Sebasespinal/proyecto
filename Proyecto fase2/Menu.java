@@ -37,5 +37,9 @@ public class Menu extends World
         dog3.setLocation(288,357);
         dog2.setLocation(668,327);
         dog3.setLocation(267,307);
+        
+        Scores score = new Scores();
+        addObject(score,506,314);
+        score.setLocation(475,525);
     }
 }

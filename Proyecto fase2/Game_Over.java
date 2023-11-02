@@ -27,7 +27,6 @@ public class Game_Over extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 600, 1); 
         FinalScore = score;
-
         prepare();
     }
 
@@ -36,7 +35,7 @@ public class Game_Over extends World
 
         String name = Juego.name;
         if (name != null) {
-            showText("Jugador/a: " + name, 290, 250);
+            showText("Jugador/a: " + name, 295, 250);
         }
         showText("Puntaje: " + FinalScore, 290, 300);
         if (Top5 != null){
@@ -52,15 +51,13 @@ public class Game_Over extends World
      */
     private void prepare()
     {
-        Dog dog = new Dog();
+        BotonMenu dog = new BotonMenu();
         addObject(dog,506,314);
-        dog.setLocation(770,525);
-        dog.setLocation(677,453);
-        dog.setLocation(693,471);
-        dog.setLocation(632,407);
-        dog.setLocation(694,431);
-        dog.setLocation(682,423);
-        dog.setLocation(686,379);
+        dog.setLocation(775,525);
+        
+        Scores score = new Scores();
+        addObject(score,506,314);
+        score.setLocation(575,525);
     }
     
     public Connection getConnection() throws SQLException 
