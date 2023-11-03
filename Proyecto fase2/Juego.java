@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 /**
  * Game Screen, were the clasification of different Waste Objects are made
  * 
- * @author Ricardo Chuy
+ * @author Ricardo Chuy y Gerardo Fernandez
  * @version (a version number or a date)
  */
 public class Juego extends World
@@ -53,7 +53,6 @@ public class Juego extends World
      */
     public void act()
     {
-        prepare();
         ShowScore();
         SpawnNewWaste();
         if (lives == 0) {

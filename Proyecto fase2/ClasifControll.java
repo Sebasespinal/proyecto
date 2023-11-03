@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Class that manages almost all logic. Specially de clasification of waste
  * 
- * @author Ricardo Chuy
+ * @author Ricardo Chuy y Gerardo Fernandez
  * @version (a version number or a date)
  */
 public class ClasifControll extends Actor
