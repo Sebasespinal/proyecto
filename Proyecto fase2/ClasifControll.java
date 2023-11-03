@@ -68,9 +68,9 @@ public class ClasifControll extends Actor
      * Substracting points to the world score variable
      */
     public void SubstractPoints(Juego juego){
-        int gameScore = juego.getScore();
+        int gameLives = juego.getLives();
         Greenfoot.playSound("WRONG.mp3");
-        juego.setScore(gameScore - 50);
+        juego.setLives(gameLives - 1);
     }
     
     

@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
 public class Juego extends World
 {
     private int timer = 7250;
+    private int lives = 3;
     private int score;
     public static String name = null;
     private ClasifControll Controller = new ClasifControll();
@@ -38,6 +39,14 @@ public class Juego extends World
         score = thescore;
     }
     
+    public int getLives(){
+        return lives;
+    }
+    
+    public void setLives(int thelives){
+        lives = thelives;
+    }
+    
     /**
      * Act method that checks every fram to shoe the time, score, spawn new waste and change screen when 
      * the time reaches 0
@@ -45,23 +54,11 @@ public class Juego extends World
     public void act()
     {
         prepare();
-        ShowTimer();
         ShowScore();
         SpawnNewWaste();
-        if (timer <= 0) {
+        if (lives == 0) {
             Greenfoot.playSound("WIN.mp3");
             Greenfoot.setWorld(new Game_Over(score));
-        }
-    }
-    
-    /**
-     * Method to show the time that is left, only when module 60
-     * of the time is equal to 0 (60 frames in 1 second).
-     */
-    public void ShowTimer(){
-        timer--;
-        if (timer % 60 == 0){
-            //showText("Tiempo: "+ timer / 60, 50, 50);
         }
     }
     
@@ -78,6 +75,7 @@ public class Juego extends World
      */
     public void SpawnNewWaste(){
         Actor random_Waste = Controller.RandomWasteGenerator();
+        timer --;
         if (timer % 120 == 0){
             addObject(random_Waste,10,200);
         }
