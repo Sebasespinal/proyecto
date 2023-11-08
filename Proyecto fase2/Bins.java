@@ -4,7 +4,7 @@ import java.util.ArrayList;
 /**
  * Parent Class of types of bins
  * 
- * @author Ricardo Chuy
+ * @author Rene Sebastian
  * @version (a version number or a date)
  */
 public abstract class Bins extends Actor

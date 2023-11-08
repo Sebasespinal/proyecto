@@ -1,8 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
- * Here we show the strart page
+ * Este es el inicio del juego
  * 
- * @author Fabi
+ * @author Gerardo Fernandez
  * @version (a version number or a date)
  */
 public class Start extends World
@@ -16,23 +16,17 @@ public class Start extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(900, 600, 1); 
         prepare();
-            }
+    }
     
     /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
+     * Prepara al mundo para el inicio del programa.
+     * Es decir: crear los objetos iniciales y agregarlos al mundo.
      */
     private void prepare()
     {
         Dog dog = new Dog();
         addObject(dog, 250, 117);
-        dog.setLocation(488,325);
-        dog.setLocation(620,385);
-        getBackground();
-        dog.setLocation(576,371);
-        dog.setLocation(626,400);
-        dog.setLocation(700,194);
-        dog.setLocation(629,371);
-        dog.setLocation(647,348);
+        dog.setLocation(650,350);
+        
     }
 }

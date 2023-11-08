@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Dog3 here.
  * 
- * @author (your name) 
+ * @author (Gerardo Fernandez) 
  * @version (a version number or a date)
  */
 public class Dog3 extends Actor

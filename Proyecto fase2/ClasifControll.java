@@ -1,13 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import javax.swing.JOptionPane;
 /**
- * Class that manages almost all logic. Specially de clasification of waste
+ * Clase que maneja practicamente toda la logica. Especialmente la clasificacion de basura
  * 
- * @author Ricardo Chuy y Gerardo Fernandez
+ * @author Rene Sebastian y Gerardo Fernandez
  * @version (a version number or a date)
  */
 public class ClasifControll extends Actor
-{
+{    
     public ClasifControll(){
         
     }
@@ -22,7 +22,7 @@ public class ClasifControll extends Actor
     }
     
     /**
-     * Logic to check if the waste placed in the correct bin
+     * Logica para saber si la basura fue puesta en el basurero correcto
      */
     public boolean IsClassificationCorrect(Actor waste, Bins bin, Juego juego){
         if(bin.getType() == 0){
@@ -56,7 +56,7 @@ public class ClasifControll extends Actor
     }
     
     /**
-     * Adding points to the world score variable
+     * Suma puntos cuando pone la basura en su lugar
      */
     public void addPoints(Juego juego){        
         int gameScore = juego.getScore();
@@ -65,7 +65,7 @@ public class ClasifControll extends Actor
     }
     
     /**
-     * Substracting points to the world score variable
+     * Pierde una vida cuando comete un error
      */
     public void SubstractPoints(Juego juego){
         int gameLives = juego.getLives();
@@ -73,10 +73,9 @@ public class ClasifControll extends Actor
         juego.setLives(gameLives - 1);
     }
     
-    
     /**
-     * Generator for 1 random Waste
-     * returns an actor that may vary depending a randomly generated number
+     * Genera una basura al azar
+     * devuelve un actor que varia dependiendo un numero al azar
      */
     public Actor RandomWasteGenerator(){
         int random = (int)Math.floor(Math.random()*(6-1+1)+1);

@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * A class that is both a bin and inroganic, and adds the characteristics for
  * a nonREcylable bin, for this kind of objects too.
  * 
- * @author Ricardo Chuy 
+ * @author Rene Sebastian
  * @version (a version number or a date)
  */
 public class NonRecyclable extends Inorganic

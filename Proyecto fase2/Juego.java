@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import javax.swing.JOptionPane;
 /**
- * Game Screen, were the clasification of different Waste Objects are made
+ * Pantalla del juego, donde esta hecha la clasificacion de los desperdicios
  * 
- * @author Ricardo Chuy y Gerardo Fernandez
+ * @author (Gerardo Fernandez)
  * @version (a version number or a date)
  */
 public class Juego extends World
@@ -48,8 +48,8 @@ public class Juego extends World
     }
     
     /**
-     * Act method that checks every fram to shoe the time, score, spawn new waste and change screen when 
-     * the time reaches 0
+     * Act metodo que revisa cuantas vidas tiene el jugador, si es igual a 0 produce un 
+     * sonido y finaliza el juego.
      */
     public void act()
     {
@@ -62,15 +62,15 @@ public class Juego extends World
     }
     
     /**
-     * Method to show score
+     * Metodo para mostrar el score
      */
     public void ShowScore(){
         showText("Puntaje: "+ score, 750, 125);
     }
     
     /**
-     * By getting a random waste with the logic controller, the world adds this new objecto
-     * when the module 120 of timer equals 0 (Every 2 seconds)
+     * Al obtener un desperdicio aleatorio con el controlador lógico, el mundo agrega este nuevo objeto
+     * cuando el módulo 120 del temporizador es igual a 0 (Cada 2 segundos)
      */
     public void SpawnNewWaste(){
         Actor random_Waste = Controller.RandomWasteGenerator();
@@ -81,8 +81,8 @@ public class Juego extends World
     }
     
     /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
+     * Prepara al mundo para el inicio del programa.
+     * Es decir: crear los objetos iniciales y agregarlos al mundo.
      */
     private void prepare()
     {

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Bins
-comment0.text=\r\n\ Parent\ Class\ of\ types\ of\ bins\r\n\ \r\n\ @author\ Ricardo\ Chuy\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Parent\ Class\ of\ types\ of\ bins\r\n\ \r\n\ @author\ Rene\ Sebastian\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Bins\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

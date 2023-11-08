@@ -1,6 +1,6 @@
 import greenfoot.*; 
 /**
- * Write a description of class Scoreboard here.
+ * Pantalla que muestra las puntuaciones de los jugadores
  * 
  * @author (Gerardo Fernandez) 
  * @version (a version number or a date)

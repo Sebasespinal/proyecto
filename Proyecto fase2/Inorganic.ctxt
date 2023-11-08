@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Inorganic
-comment0.text=\r\n\ Class\ that\ extends\ from\ bins,\ correspondes\ to\ inorganic\ and\ has\ 2\ toher\ subclasses\r\n\ Recyclable\ and\ NonRecyclable\r\n\ \r\n\ @author\ Ricardo\ Chuy\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ that\ extends\ from\ bins,\ correspondes\ to\ inorganic\ and\ has\ 2\ toher\ subclasses\r\n\ Recyclable\ and\ NonRecyclable\r\n\ \r\n\ @author\ Rene\ Sebastian\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Inorganic()
 comment1.text=\r\n\ Constructor\ of\ the\ class\ inorganic\r\n

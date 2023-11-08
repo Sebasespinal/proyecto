@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Class that extends from bins, correspondes to inorganic and has 2 toher subclasses
  * Recyclable and NonRecyclable
  * 
- * @author Ricardo Chuy 
+ * @author Rene Sebastian
  * @version (a version number or a date)
  */
 public class Inorganic extends Bins

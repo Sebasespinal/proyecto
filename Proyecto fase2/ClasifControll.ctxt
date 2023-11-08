@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=ClasifControll
-comment0.text=\r\n\ Class\ that\ manages\ almost\ all\ logic.\ Specially\ de\ clasification\ of\ waste\r\n\ \r\n\ @author\ Ricardo\ Chuy\ y\ Gerardo\ Fernandez\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Clase\ que\ maneja\ practicamente\ toda\ la\ logica.\ Especialmente\ la\ clasificacion\ de\ basura\r\n\ \r\n\ @author\ Rene\ Sebastian\ y\ Gerardo\ Fernandez\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=ClasifControll()
 comment2.params=
@@ -8,14 +8,14 @@ comment2.target=void\ act()
 comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ ClasifControll\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
 comment3.params=waste\ bin\ juego
 comment3.target=boolean\ IsClassificationCorrect(greenfoot.Actor,\ Bins,\ Juego)
-comment3.text=\r\n\ Logic\ to\ check\ if\ the\ waste\ placed\ in\ the\ correct\ bin\r\n
+comment3.text=\r\n\ Logica\ para\ saber\ si\ la\ basura\ fue\ puesta\ en\ el\ basurero\ correcto\r\n
 comment4.params=juego
 comment4.target=void\ addPoints(Juego)
-comment4.text=\r\n\ Adding\ points\ to\ the\ world\ score\ variable\r\n
+comment4.text=\r\n\ Suma\ puntos\ cuando\ pone\ la\ basura\ en\ su\ lugar\r\n
 comment5.params=juego
 comment5.target=void\ SubstractPoints(Juego)
-comment5.text=\r\n\ Substracting\ points\ to\ the\ world\ score\ variable\r\n
+comment5.text=\r\n\ Pierde\ una\ vida\ cuando\ comete\ un\ error\r\n
 comment6.params=
 comment6.target=greenfoot.Actor\ RandomWasteGenerator()
-comment6.text=\r\n\ Generator\ for\ 1\ random\ Waste\r\n\ returns\ an\ actor\ that\ may\ vary\ depending\ a\ randomly\ generated\ number\r\n
+comment6.text=\r\n\ Genera\ una\ basura\ al\ azar\r\n\ devuelve\ un\ actor\ que\ varia\ dependiendo\ un\ numero\ al\ azar\r\n
 numComments=7

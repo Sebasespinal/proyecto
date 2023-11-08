@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Menu here.
+ * Menu interactivo para el jugador
  * 
- * @author (your name) 
+ * @author (Gerardo Fernandez) 
  * @version (a version number or a date)
  */
 public class Menu extends World
@@ -21,23 +21,19 @@ public class Menu extends World
     }
     
     /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
+     * Prepara al mundo para el inicio del programa.
+        Es decir: crear los objetos iniciales y agregarlos al mundo.
      */
     private void prepare()
     {
         Dog2 dog2 = new Dog2();
         addObject(dog2, 250, 117);
-        dog2.setLocation(508,295);
+        dog2.setLocation(668,327);
 
         Dog3 dog3 = new Dog3();
         addObject(dog3, 250, 117);
-        dog3.setLocation(195,296);
-        dog3.setLocation(178,301);
         dog3.setLocation(288,357);
-        dog2.setLocation(668,327);
-        dog3.setLocation(267,307);
-        
+               
         Scores score = new Scores();
         addObject(score,506,314);
         score.setLocation(475,525);

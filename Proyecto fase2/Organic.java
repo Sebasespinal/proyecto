@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Class for bins that will contain organic wastes
  * 
- * @author (your name) 
+ * @author (Rene Sebastian) 
  * @version (a version number or a date)
  */
 public class Organic extends Bins
