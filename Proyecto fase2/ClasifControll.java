@@ -8,6 +8,8 @@ import javax.swing.JOptionPane;
  */
 public class ClasifControll extends Actor
 {    
+    private int timer = 7250;
+    
     public ClasifControll(){
         
     }
@@ -56,6 +58,16 @@ public class ClasifControll extends Actor
     }
     
     /**
+     * Metodo que controla el sistema de vidas
+     */
+    public void checkLivesAndGameOver(Juego juego) {
+        if (juego.getLives() == 0) {
+            Greenfoot.playSound("WIN.mp3");
+            Greenfoot.setWorld(new Game_Over(juego.getScore()));
+        }
+    }
+    
+    /**
      * Suma puntos cuando pone la basura en su lugar
      */
     public void addPoints(Juego juego){        
@@ -71,6 +83,17 @@ public class ClasifControll extends Actor
         int gameLives = juego.getLives();
         Greenfoot.playSound("WRONG.mp3");
         juego.setLives(gameLives - 1);
+    }
+    
+    /**
+     * Al obtener un desperdicio aleatorio con el controlador lógico, el mundo agrega este nuevo objeto
+     * cuando el módulo 120 del temporizador es igual a 0 (Cada 2 segundos)
+     */
+    public void SpawnNewWaste(World world) {
+        timer--;
+        if (timer % 120 == 0) {
+            world.addObject(RandomWasteGenerator(), 10, 200);
+        }
     }
     
     /**

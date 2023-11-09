@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Juego
-comment0.text=\r\n\ Pantalla\ del\ juego,\ donde\ esta\ hecha\ la\ clasificacion\ de\ los\ desperdicios\r\n\ \r\n\ @author\ (Gerardo\ Fernandez)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Pantalla\ del\ juego,\ donde\ unicamente\ se\ encuentran\ los\ elemetos\ visuales\ \r\n\ del\ juego.\r\n\ \r\n\ @author\ (Gerardo\ Fernandez)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Juego()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Juego.\r\n\ \r\n
@@ -19,9 +19,6 @@ comment7.params=
 comment7.target=void\ ShowScore()
 comment7.text=\r\n\ Metodo\ para\ mostrar\ el\ score\r\n
 comment8.params=
-comment8.target=void\ SpawnNewWaste()
-comment8.text=\r\n\ Al\ obtener\ un\ desperdicio\ aleatorio\ con\ el\ controlador\ l\u00F3gico,\ el\ mundo\ agrega\ este\ nuevo\ objeto\r\n\ cuando\ el\ m\u00F3dulo\ 120\ del\ temporizador\ es\ igual\ a\ 0\ (Cada\ 2\ segundos)\r\n
-comment9.params=
-comment9.target=void\ prepare()
-comment9.text=\r\n\ Prepara\ al\ mundo\ para\ el\ inicio\ del\ programa.\r\n\ Es\ decir\:\ crear\ los\ objetos\ iniciales\ y\ agregarlos\ al\ mundo.\r\n
-numComments=10
+comment8.target=void\ prepare()
+comment8.text=\r\n\ Prepara\ al\ mundo\ para\ el\ inicio\ del\ programa.\r\n\ Es\ decir\:\ crear\ los\ objetos\ iniciales\ y\ agregarlos\ al\ mundo.\r\n
+numComments=9
