@@ -29,6 +29,7 @@ public class Juego extends World
         }
         prepare();
         setScore(0);
+        //showLives();
     }
     
     public int getScore(){
@@ -56,6 +57,7 @@ public class Juego extends World
         Controller.checkLivesAndGameOver(this);
         Controller.SpawnNewWaste(this);
         ShowScore();
+        ShowVidas();
     }
     
     /**
@@ -64,6 +66,16 @@ public class Juego extends World
     public void ShowScore(){
         showText("Puntaje: "+ score, 750, 125);
     }     
+    
+    public void ShowVidas() {
+        showText("Vidas: " + lives, 750, 150);
+    }
+    
+    private void showLives() {
+        Lives vidas = new Lives();
+        vidas.getImage().scale(vidas.getImage().getWidth() / 5, vidas.getImage().getHeight() / 5);
+        addObject(vidas, 748, 85);  
+    }
 
     /**
      * Prepara al mundo para el inicio del programa.
