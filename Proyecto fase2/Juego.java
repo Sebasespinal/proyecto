@@ -14,6 +14,9 @@ public class Juego extends World
     public static String name = null;
     private ClasifControll Controller = new ClasifControll();
     private boolean nameRequested = false;
+    private Lives vidas;
+    private Lives vidas1;
+    private Lives vidas2;
     
     /**
      * Constructor for objects of class Juego.
@@ -21,7 +24,6 @@ public class Juego extends World
      */
     public Juego()
     {    
-        // Create a new world with 900x600 cells with a cell size of 1x1 pixels.
         super(900, 600, 1); 
         if (!nameRequested && name == null) {
             name = JOptionPane.showInputDialog("Ingrese su nombre");
@@ -29,7 +31,7 @@ public class Juego extends World
         }
         prepare();
         setScore(0);
-        //showLives();
+        showLives();
     }
     
     public int getScore(){
@@ -45,7 +47,19 @@ public class Juego extends World
     }
     
     public void setLives(int thelives){
-        lives = thelives;
+    lives = thelives;
+    if (lives < 3) {
+        removeObject(vidas);
+        vidas = null;
+    }
+    if (lives < 2) {
+        removeObject(vidas1);
+        vidas1 = null;
+    }
+    if (lives < 1) {
+        removeObject(vidas2);
+        vidas2 = null;
+    }
     }
     
     /**
@@ -57,7 +71,6 @@ public class Juego extends World
         Controller.checkLivesAndGameOver(this);
         Controller.SpawnNewWaste(this);
         ShowScore();
-        ShowVidas();
     }
     
     /**
@@ -65,17 +78,19 @@ public class Juego extends World
      */
     public void ShowScore(){
         showText("Puntaje: "+ score, 750, 125);
-    }     
-    
-    public void ShowVidas() {
-        showText("Vidas: " + lives, 750, 150);
-    }
-    
+    }   
+
     private void showLives() {
-        Lives vidas = new Lives();
-        vidas.getImage().scale(vidas.getImage().getWidth() / 5, vidas.getImage().getHeight() / 5);
-        addObject(vidas, 748, 85);  
-    }
+    vidas = new Lives();
+    vidas1 = new Lives();
+    vidas2 = new Lives();
+    vidas.getImage().scale(vidas.getImage().getWidth() / 5, vidas.getImage().getHeight() / 5);
+    vidas1.getImage().scale(vidas1.getImage().getWidth() / 5, vidas1.getImage().getHeight() / 5);
+    vidas2.getImage().scale(vidas2.getImage().getWidth() / 5, vidas2.getImage().getHeight() / 5);
+    addObject(vidas, 748, 65);
+    addObject(vidas1, 700, 85);  
+    addObject(vidas2, 800, 85); 
+    }  
 
     /**
      * Prepara al mundo para el inicio del programa.

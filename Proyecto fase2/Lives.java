@@ -2,7 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Lives here.
  * 
- * @author (your name) 
+ * @author (Gerardo Fernandez) 
  * @version (a version number or a date)
  */
 public class Lives extends Actor
